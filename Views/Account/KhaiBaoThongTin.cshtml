@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Khai Báo Thông Tin";
+    string khaiBao = ViewBag.KhaiBao as string ?? "0";
+}
+
+<div class="khai-bao-container">
+    @if (khaiBao == "1")
+    {
+        <div class="da-khai-bao">
+            <h2>✅ Bạn đã khai báo thông tin</h2>
+            <p>Nếu cần chỉnh sửa, vui lòng liên hệ phòng tuyển sinh.</p>
+        </div>
+    }
+    else
+    {
+        <div class="chua-khai-bao">
+            <h2>🔔 Bạn chưa khai báo thông tin</h2>
+            <p>Vui lòng tiến hành khai báo theo từng bước bên dưới:</p>
+
+            <div class="buoc-khai-bao">
+                <a href="@Url.Action("Personal", "Account")" class="btn btn-primary">👉 Bắt đầu khai báo (Bước 1)</a>
+            </div>
+        </div>
+    }
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/KhaiBaoThongTin.css" />
+}
+
+@section Scripts {
+    <script src="~/js/KhaiBaoThongTin.js"></script>
+}

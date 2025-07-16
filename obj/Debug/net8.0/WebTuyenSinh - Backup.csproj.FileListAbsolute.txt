@@ -1,0 +1,8 @@
+C:\Users\ADMIN\source\repos\WebTuyenSinh\obj\Debug\net8.0\WebTuyenSinh - Backup.csproj.AssemblyReference.cache
+C:\Users\ADMIN\source\repos\WebTuyenSinh\obj\Debug\net8.0\WebTuyenSinh - Backup.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\source\repos\WebTuyenSinh\obj\Debug\net8.0\WebTuyenSinh - Backup.AssemblyInfoInputs.cache
+C:\Users\ADMIN\source\repos\WebTuyenSinh\obj\Debug\net8.0\WebTuyenSinh - Backup.AssemblyInfo.cs
+C:\Users\ADMIN\source\repos\WebTuyenSinh\obj\Debug\net8.0\WebTuyenSinh - Backup.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\source\repos\WebTuyenSinh\obj\Debug\net8.0\WebTuyenSinh - Backup.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ADMIN\source\repos\WebTuyenSinh\obj\Debug\net8.0\WebTuyenSinh - Backup.RazorAssemblyInfo.cache
+C:\Users\ADMIN\source\repos\WebTuyenSinh\obj\Debug\net8.0\WebTuyenSinh - Backup.RazorAssemblyInfo.cs

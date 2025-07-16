@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\controllers\\accountcontroller.xoataikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:controllers\\accountcontroller.xoataikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\controllers\\accountcontroller.lichsudangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:controllers\\accountcontroller.lichsudangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:views\\shared\\_header.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\views\\account\\thongtinnguyenvong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:views\\account\\thongtinnguyenvong.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\controllers\\accountcontroller.login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:controllers\\accountcontroller.login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\wwwroot\\css\\thongtinnguyenvong.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:wwwroot\\css\\thongtinnguyenvong.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\wwwroot\\js\\thongtinnguyenvong.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:wwwroot\\js\\thongtinnguyenvong.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\controllers\\accountcontroller.thongtinnguyenvong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:controllers\\accountcontroller.thongtinnguyenvong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\viewmodels\\dangkynguyenvongvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:viewmodels\\dangkynguyenvongvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\models\\dangkynguyenvong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:models\\dangkynguyenvong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.XoaTaiKhoan.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\AccountController.XoaTaiKhoan.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.XoaTaiKhoan.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\AccountController.XoaTaiKhoan.cs",
+              "RelativeToolTip": "Controllers\\AccountController.XoaTaiKhoan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:43:07.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountController.LichSuDangNhap.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\AccountController.LichSuDangNhap.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.LichSuDangNhap.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\AccountController.LichSuDangNhap.cs",
+              "RelativeToolTip": "Controllers\\AccountController.LichSuDangNhap.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:41:59.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Header.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Views\\Shared\\_Header.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Header.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Views\\Shared\\_Header.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_Header.cshtml*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADEAAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T13:38:54.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEMAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T06:30:45.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.Login.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\AccountController.Login.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.Login.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\AccountController.Login.cs",
+              "RelativeToolTip": "Controllers\\AccountController.Login.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:29:10.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ThongTinNguyenVong.js",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\ThongTinNguyenVong.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\ThongTinNguyenVong.js",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\ThongTinNguyenVong.js",
+              "RelativeToolTip": "wwwroot\\js\\ThongTinNguyenVong.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-07-16T13:17:37.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ThongTinNguyenVong.css",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\ThongTinNguyenVong.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\ThongTinNguyenVong.css",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\ThongTinNguyenVong.css",
+              "RelativeToolTip": "wwwroot\\css\\ThongTinNguyenVong.css",
+              "ViewState": "AgIAADgAAAAAAAAAAAAqwDgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-07-16T13:17:13.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ThongTinNguyenVong.cshtml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Views\\Account\\ThongTinNguyenVong.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\ThongTinNguyenVong.cshtml",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Views\\Account\\ThongTinNguyenVong.cshtml",
+              "RelativeToolTip": "Views\\Account\\ThongTinNguyenVong.cshtml",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAmwGoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-16T13:11:37.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountController.ThongTinNguyenVong.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\AccountController.ThongTinNguyenVong.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.ThongTinNguyenVong.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\AccountController.ThongTinNguyenVong.cs",
+              "RelativeToolTip": "Controllers\\AccountController.ThongTinNguyenVong.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwDkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T12:46:23.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DangKyNguyenVongVM.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\ViewModels\\DangKyNguyenVongVM.cs",
+              "RelativeDocumentMoniker": "ViewModels\\DangKyNguyenVongVM.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\ViewModels\\DangKyNguyenVongVM.cs",
+              "RelativeToolTip": "ViewModels\\DangKyNguyenVongVM.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwB0AAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T12:25:27.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DangKyNguyenVong.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Models\\DangKyNguyenVong.cs",
+              "RelativeDocumentMoniker": "Models\\DangKyNguyenVong.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Models\\DangKyNguyenVong.cs",
+              "RelativeToolTip": "Models\\DangKyNguyenVong.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T12:25:19.59Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

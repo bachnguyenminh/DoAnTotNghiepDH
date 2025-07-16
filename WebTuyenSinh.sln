@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebTuyenSinh", "WebTuyenSinh.csproj", "{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HBCaodang", "..\HBCaodang\HBCaodang.csproj", "{AC64DDE7-B652-47BB-BC51-30FC748A7DCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC64DDE7-B652-47BB-BC51-30FC748A7DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC64DDE7-B652-47BB-BC51-30FC748A7DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC64DDE7-B652-47BB-BC51-30FC748A7DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC64DDE7-B652-47BB-BC51-30FC748A7DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFB42E49-510C-45CD-8588-64DFB4CA01A7}
+	EndGlobalSection
+EndGlobal

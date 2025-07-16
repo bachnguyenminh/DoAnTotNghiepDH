@@ -1,0 +1,30 @@
+﻿.khai-bao-container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.da-khai-bao h2 {
+    color: green;
+    margin-bottom: 15px;
+}
+
+.chua-khai-bao h2 {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.buoc-khai-bao {
+    margin-top: 25px;
+}
+
+    .buoc-khai-bao a.btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 8px;
+    }

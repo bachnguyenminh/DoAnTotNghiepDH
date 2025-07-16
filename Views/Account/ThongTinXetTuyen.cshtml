@@ -1,0 +1,161 @@
+﻿@model WebTuyenSinh.ViewModels.ThongTinXetTuyenVM
+
+@{
+    ViewData["Title"] = "Thông tin xét tuyển";
+    Layout = "_Layout";
+}
+
+<div class="form-container">
+    <h3 class="mb-4 text-center">THÔNG TIN XÉT TUYỂN</h3>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success text-center fw-bold" id="success-alert">
+            <i class="bi bi-check-circle-fill me-2"></i>@TempData["Success"]
+        </div>
+    }
+
+    <form asp-action="ThongTinXetTuyen" method="post" class="needs-validation" novalidate>
+        @Html.AntiForgeryToken()
+        <input type="hidden" asp-for="CCCD" />
+
+        <!-- Trường học lớp 10 -->
+        <fieldset class="border p-3 mb-4">
+            <legend class="w-auto px-2">Trường học lớp 10</legend>
+            <div class="row">
+                <div class="col-md-4">
+                    <label>Tỉnh/Thành</label>
+                    <input asp-for="TinhThanhLop10" class="form-control" required />
+                </div>
+                <div class="col-md-4">
+                    <label>Quận/Huyện</label>
+                    <input asp-for="QuanHuyenLop10" class="form-control" required />
+                </div>
+                <div class="col-md-4">
+                    <label>Tên trường</label>
+                    <input asp-for="TruongHocLop10" class="form-control" required />
+                </div>
+            </div>
+        </fieldset>
+
+        <!-- Trường học lớp 11 -->
+        <fieldset class="border p-3 mb-4">
+            <legend class="w-auto px-2">Trường học lớp 11</legend>
+            <div class="form-check mb-2">
+                <input asp-for="GiongLop10_Lop11" class="form-check-input" type="checkbox" id="chkGiongLop10_11" />
+                <label class="form-check-label" for="chkGiongLop10_11">Giống lớp 10</label>
+            </div>
+            <div id="lop11Inputs" class="row">
+                <div class="col-md-4"><label>Tỉnh/Thành</label><input asp-for="TinhThanhLop11" class="form-control" /></div>
+                <div class="col-md-4"><label>Quận/Huyện</label><input asp-for="QuanHuyenLop11" class="form-control" /></div>
+                <div class="col-md-4"><label>Tên trường</label><input asp-for="TruongHocLop11" class="form-control" /></div>
+            </div>
+        </fieldset>
+
+        <!-- Trường học lớp 12 -->
+        <fieldset class="border p-3 mb-4">
+            <legend class="w-auto px-2">Trường học lớp 12</legend>
+            <div class="form-check mb-2">
+                <input asp-for="GiongLop10_Lop12" class="form-check-input" type="checkbox" id="chkGiongLop10_12" />
+                <label class="form-check-label" for="chkGiongLop10_12">Giống lớp 10</label>
+            </div>
+            <div id="lop12Inputs" class="row">
+                <div class="col-md-4"><label>Tỉnh/Thành</label><input asp-for="TinhThanhLop12" class="form-control" /></div>
+                <div class="col-md-4"><label>Quận/Huyện</label><input asp-for="QuanHuyenLop12" class="form-control" /></div>
+                <div class="col-md-4"><label>Tên trường</label><input asp-for="TruongHocLop12" class="form-control" /></div>
+            </div>
+        </fieldset>
+
+        <!-- Ưu tiên -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label>Khu vực ưu tiên</label>
+                <select asp-for="KhuVucUuTien" class="form-select">
+                    <option value="">-- Chọn khu vực --</option>
+                    <option value="KV1">KV1</option>
+                    <option value="KV2">KV2</option>
+                    <option value="KV3">KV3</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label>Đối tượng ưu tiên</label>
+                <select asp-for="DoiTuongUuTien" class="form-select">
+                    <option value="">-- Chọn đối tượng --</option>
+                    @for (int i = 0; i <= 7; i++)
+                    {
+                        <option value="@i.ToString("00")">@i.ToString("00")</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <!-- Chứng chỉ -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label>Chứng chỉ ngoại ngữ</label>
+                <select asp-for="ChungChi" class="form-select">
+                    <option value="">-- Chọn chứng chỉ --</option>
+                    @foreach (var cc in Model.DanhSachChungChi)
+                    {
+                        <option value="@cc">@cc</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-6" id="diemChungChiGroup">
+                <label>Điểm chứng chỉ</label>
+                <input asp-for="DiemChungChi" type="text" class="form-control" placeholder="Nhập điểm" />
+            </div>
+        </div>
+
+        <!-- Đánh giá năng lực -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <label>Kỳ thi đánh giá năng lực</label>
+                <select asp-for="DanhGiaNangLuc" class="form-select">
+                    <option value="">-- Chọn kỳ thi --</option>
+                    @foreach (var dg in Model.DanhSachDanhGiaNangLuc)
+                    {
+                        <option value="@dg">@dg</option>
+                    }
+                </select>
+            </div>
+            <div class="col-md-6" id="diemDanhGiaGroup">
+                <label>Điểm đánh giá năng lực</label>
+                <input asp-for="DiemDanhGiaNangLuc" type="text" class="form-control" placeholder="Nhập điểm" />
+            </div>
+        </div>
+
+        <!-- Điểm lớp 12 -->
+        <h5 class="mt-4">Điểm trung bình các môn lớp 12</h5>
+        <div class="row">
+            <div class="col-md-3 mb-2"><label>Toán</label><input asp-for="Toan" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Ngữ văn</label><input asp-for="NguVan" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Lịch sử</label><input asp-for="LichSu" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Địa lý</label><input asp-for="DiaLy" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>GDCD</label><input asp-for="GDCD" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Vật lý</label><input asp-for="VatLy" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Hóa học</label><input asp-for="HoaHoc" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Sinh học</label><input asp-for="SinhHoc" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Tin học</label><input asp-for="CongNgheTinHoc" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Tiếng Anh</label><input asp-for="TiengAnh" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Tiếng Nga</label><input asp-for="TiengNga" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Tiếng Đức</label><input asp-for="TiengDuc" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Tiếng Trung</label><input asp-for="TiengTrung" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Tiếng Nhật</label><input asp-for="TiengNhat" class="form-control" /></div>
+            <div class="col-md-3 mb-2"><label>Tiếng Hàn</label><input asp-for="TiengHan" class="form-control" /></div>
+        </div>
+
+        <div class="text-end mt-4">
+            <button type="submit" class="btn btn-success">Lưu thông tin</button>
+        </div>
+    </form>
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/TTXetTuyen.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+}
+
+@section Scripts {
+    <script src="~/js/ttxettuyen.js"></script>
+}

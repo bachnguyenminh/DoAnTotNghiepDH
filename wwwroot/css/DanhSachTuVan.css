@@ -1,0 +1,127 @@
+﻿/* Thanh chứa bảng */
+.bang-tu-van-wrapper {
+    overflow-x: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Wrapper */
+.bang-tu-van-wrapper {
+    overflow-x: auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Table */
+table.table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Tự điều chỉnh độ rộng theo nội dung */
+}
+
+/* Table Header và Body */
+th, td {
+    padding: 12px 16px;
+    text-align: center;
+    vertical-align: middle;
+    word-break: break-word;
+    white-space: normal; /* Cho phép xuống dòng */
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Header riêng */
+thead th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Giới hạn độ rộng cột có thể dài, giúp giãn dòng */
+td:nth-child(7), /* Địa chỉ */
+td:nth-child(8), /* Email */
+td:nth-child(10), /* Trường */
+td:nth-child(11), /* Ngành */
+td:nth-child(18) /* Ghi chú */ {
+    max-width: 220px;
+}
+
+/* Tăng chiều cao dòng */
+tr {
+    height: auto;
+}
+
+
+/* Tự động xuống dòng nếu nội dung dài */
+td {
+    white-space: normal;
+    max-width: 300px;
+}
+
+/* Header căn đều, chữ to nhẹ */
+th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Thanh chứa các nút chức năng */
+.action-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+    align-items: flex-start;
+}
+
+/* Ô tìm kiếm */
+.search-form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-input {
+    height: 40px;
+    width: 220px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Nút tìm kiếm gọn hơn */
+.btn-search {
+    padding: 6px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Các nút chung */
+.btn-action {
+    height: 40px;
+    padding: 6px 16px;
+    font-size: 14px;
+    border-radius: 8px;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    transition: 0.2s;
+}
+
+    .btn-action:hover {
+        opacity: 0.9;
+    }

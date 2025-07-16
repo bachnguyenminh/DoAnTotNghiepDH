@@ -1,0 +1,61 @@
+﻿@model WebTuyenSinh.ViewModels.DangKyNguyenVongVM
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Đăng ký nguyện vọng";
+    var danhSachNghe = ViewBag.DanhSachNghe as List<WebTuyenSinh.Models.NganhNghe>;
+}
+
+<div class="nv-container">
+    <h3 class="text-center mb-4">ĐĂNG KÝ NGUYỆN VỌNG</h3>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success text-center fw-bold">@TempData["Success"]</div>
+    }
+
+    <form asp-action="DangKyNguyenVong" method="post">
+        <input type="hidden" asp-for="CCCD" />
+
+        @for (int i = 1; i <= 7; i++)
+        {
+            var propName = $"TenNghe{i}";
+            var maPropName = $"MaNghe{i}";
+            var selectedValue = Model.GetType().GetProperty(propName)?.GetValue(Model)?.ToString();
+            var maValue = Model.GetType().GetProperty(maPropName)?.GetValue(Model)?.ToString();
+            var visibleClass = (i == 1 || !string.IsNullOrEmpty(selectedValue)) ? "visible" : "d-none";
+
+            <div class="form-group mb-4 nguyen-vong-block @visibleClass" id="nv-block-@i">
+                <label class="form-label">Nguyện vọng @i</label>
+                <select class="form-select nghe-select" name="@propName" data-index="@i">
+                    <option value="">-- Chọn ngành nghề --</option>
+                    @foreach (var item in danhSachNghe)
+                    {
+                        var selected = (item.TenNghe == selectedValue);
+                        <option value="@item.TenNghe"
+                                selected="@(selected ? "selected" : null)"
+                                data-manghe="@item.MaNghe">
+                            @item.TenNghe
+                        </option>
+                    }
+                </select>
+
+                <input type="text" name="@maPropName"
+                       class="form-control mt-2 ma-nghe-input"
+                       placeholder="Mã ngành nghề"
+                       value="@maValue"
+                       readonly />
+            </div>
+        }
+
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-success px-4">Lưu nguyện vọng</button>
+        </div>
+    </form>
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/DangKyNguyenVong.css" asp-append-version="true" />
+}
+@section Scripts {
+    <script src="~/js/DangKyNguyenVong.js" asp-append-version="true"></script>
+}

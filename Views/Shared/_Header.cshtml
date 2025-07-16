@@ -1,0 +1,67 @@
+﻿@using Microsoft.AspNetCore.Http
+@{
+    var hoTen = Context.Session.GetString("HoTen");
+}
+<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="@(Context.Session.GetString("CCCD") == null ? Url.Action("Login", "Account") : Url.Action("Index", "Home"))">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_2dYsWufx55yX2ENk3vLey_wVcSFH49cDqQ&s" alt="WebTuyenSinh Logo" style="height: 40px;">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+            <ul class="navbar-nav menu-right">
+                <li class="nav-item">
+                    <a class="nav-link text-dark"
+                       href="@(Context.Session.GetString("CCCD") == null ? Url.Action("Login", "Account") : Url.Action("Index", "Home"))">
+                        Trang chủ
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark"
+                       href="http://tuyensinh.dtdl.edu.vn/Thong-bao-tuyen-sinh-nam-2025_bv-9.htm" target="_blank">
+                        Thông báo tuyển sinh
+                    </a>
+                </li>
+
+
+                @if (string.IsNullOrEmpty(hoTen))
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Account" asp-action="Login">Đăng nhập</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-dark" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            @hoTen
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="NhapThongTin">Thông tin cá nhân</a></li>
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="ThongTinXetTuyen">Thông tin xét tuyển</a></li>
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="DangKyNguyenVong">Thông tin Nguyện vọng</a></li>
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="PhieuDangKy">Phiếu đăng kí</a></li>
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="PhieuDangKy">Lịch sử đăng nhập</a></li>
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="Logout">Đăng xuất</a></li>
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="Logout">Xóa tài khoản</a></li>
+                        </ul>
+                    </li>
+
+                }
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark">
+                         
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>

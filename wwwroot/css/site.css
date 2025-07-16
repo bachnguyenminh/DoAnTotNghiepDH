@@ -1,0 +1,37 @@
+﻿html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.menu-right {
+    margin-left: auto;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+body {
+    background-image: url('https://xettuyenonline.edu.vn/wp-content/uploads/2022/05/dien-tu-din-lanh-ha-noi.jpg');
+    background-size: cover; /* Co giãn đầy đủ khung trình duyệt */
+    background-position: center; /* Căn giữa ảnh */
+    background-repeat: no-repeat; /* Không lặp lại */
+    background-attachment: fixed; /* Giữ cố định ảnh khi cuộn */
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu toàn màn hình */
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,99 @@
+﻿/* Giao diện đăng nhập Admin */
+
+body {
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    width: 360px;
+    margin: 100px auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+    .login-container h2 {
+        text-align: center;
+        margin-bottom: 25px;
+        color: #333;
+    }
+
+    /* Các nhóm form */
+    .login-container .form-group {
+        margin-bottom: 18px;
+        position: relative;
+    }
+
+    /* Các input text và password */
+        .login-container .form-group input,
+        .login-container .form-group button {
+            width: 100%;
+            padding: 10px 12px;
+            font-size: 16px;
+            border-radius: 4px;
+            box-sizing: border-box; /* quan trọng để padding + border không làm to ra */
+            display: block;
+            height: 45px; /* đảm bảo chiều cao tuyệt đối bằng nhau */
+        }
+
+    /* Input riêng */
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+        border: 1px solid #ccc;
+        transition: border-color 0.3s ease;
+    }
+
+    /* Button riêng */
+    .login-container button[type="submit"] {
+        background-color: #4b6cb7;
+        color: white;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+        /* Hover button */
+        .login-container button[type="submit"]:hover {
+            background-color: #3a579d;
+        }
+
+/* Icon hiển thị/ẩn mật khẩu */
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+/* Hiển thị lỗi */
+.login-container .text-danger {
+    font-size: 0.85rem;
+    color: red;
+}
+
+/* Nút đăng nhập */
+.login-container button[type="submit"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    background-color: #4b6cb7;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+    .login-container button[type="submit"]:hover {
+        background-color: #3a579d;
+    }

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - Tư vấn TS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS mặc định -->
+    <link rel="stylesheet" href="~/css/tuvan.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/footer.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- CSS riêng của mỗi trang -->
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <header class="fixed-header menu-header">
+        <div style="display: flex; align-items: center;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_2dYsWufx55yX2ENk3vLey_wVcSFH49cDqQ&s"
+                 alt="ĐTĐT College Logo" style="height: 50px; margin-right: 10px;" />
+            <span style="font-size: 18px; font-weight: bold;">Hà Nội ĐTĐT College</span>
+        </div>
+        <div><a href="#">Lý do chọn<br />Hà Nội ĐTĐT College</a></div>
+        <div><a href="#">Học bổng</a></div>
+        <div><a href="#">Chuyên ngành</a></div>
+        <div><a href="#">Thông tin<br />tuyển sinh</a></div>
+        <div>Email:<br /><a href="mailto:tuyensinh@dtdl.edu.vn">tuyensinh@dtdl.edu.vn</a></div>
+        <div>Hotline1:<br />0975.363.566</div>
+        <div>Hotline2:<br />0987.836.969</div>
+        <div>Hotline3:<br />0976.519.581</div>
+    </header>
+
+    <main class="container">
+        @RenderBody()
+    </main>
+
+    <!-- JS mặc định -->
+    <script src="~/js/tuvan.js" asp-append-version="true"></script>
+
+    <!-- JS riêng của từng trang -->
+    @RenderSection("Scripts", required: false)
+
+    @Html.Partial("_Footer")
+    <script src="~/js/footer.js" asp-append-version="true"></script>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/footer.js" asp-append-version="true"></script>
+
+</body>
+</html>

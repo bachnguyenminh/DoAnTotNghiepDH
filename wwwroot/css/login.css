@@ -1,0 +1,73 @@
+﻿.login-container {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper {
+    background-color: #fff;
+    padding: 20px 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    margin-left: 600px; /* ✅ Dịch khung sang phải */
+}
+
+
+
+    .login-wrapper h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: 600;
+        color: #333;
+    }
+
+.input-group {
+    position: relative;
+}
+
+    .input-group input.form-control {
+        padding-right: 40px;
+    }
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+
+    .toggle-password i {
+        font-size: 18px;
+        color: #6c757d;
+    }
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-submit:hover {
+        background-color: #0b5ed7;
+    }
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 14px;
+}

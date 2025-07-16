@@ -1,0 +1,101 @@
+﻿/* Nền xanh đậm, chữ trắng/ cam */
+.footer-custom {
+    background-color: #0c2d72;
+    color: #fff;
+    padding: 40px 0 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Tiêu đề mỗi cột */
+.footer-title {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Logo */
+.footer-logo {
+    max-width: 120px;
+    border-radius: 4px;
+}
+
+/* Đoạn about và contact */
+.footer-about,
+.footer-contact {
+    line-height: 1.6;
+}
+
+/* Map bo góc */
+.footer-map {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Social icons: nền trắng, icon xanh */
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    color: #0c2d72;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+    .social-icon:hover {
+        transform: scale(1.1);
+        background: #ff7c27;
+        color: #fff;
+    }
+
+/* Wrapper cho Fanpage, cho phép scroll nếu nội dung quá cao */
+.facebook-embed-wrapper {
+    width: 100%;
+    max-width: 340px;
+    height: 300px; /* bạn có thể tăng lên 400px nếu muốn */
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* iframe chiếm toàn bộ vùng wrapper */
+.facebook-embed-iframe {
+    width: 100%;
+    height: 600px; /* bằng hoặc lớn hơn wrapper để có scroll */
+    border: none;
+}
+
+
+/* Hotline */
+.hotline {
+    color: #ff7c27;
+    font-size: 18px;
+}
+
+    .hotline strong {
+        color: #fff;
+        font-size: 22px;
+    }
+
+/* Footer bottom */
+.footer-bottom {
+    margin-top: 8px;
+    color: rgba(255,255,255,0.8);
+}
+
+/* Reset container background */
+.footer-custom .container {
+    background: transparent !important;
+}

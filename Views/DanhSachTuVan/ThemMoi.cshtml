@@ -1,0 +1,116 @@
+﻿@model WebTuyenSinh.ViewModels.TuVanTuyenSinhVM
+
+@{
+    ViewData["Title"] = "Thêm mới tư vấn";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Thêm mới tư vấn tuyển sinh</h2>
+
+@if (TempData["LoiTrung"] != null)
+{
+    <div class="alert alert-danger">@TempData["LoiTrung"]</div>
+}
+
+<form asp-action="ThemMoi" method="post">
+    <div class="row g-3">
+        <div class="col-md-6">
+            <label asp-for="HoVaTen" class="form-label"></label>
+            <input asp-for="HoVaTen" class="form-control" />
+            <span asp-validation-for="HoVaTen" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-3">
+            <label asp-for="NamSinh" class="form-label"></label>
+            <input asp-for="NamSinh" class="form-control" type="date" />
+            <span asp-validation-for="NamSinh" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-3">
+            <label asp-for="SoDienThoai" class="form-label"></label>
+            <input asp-for="SoDienThoai" class="form-control" />
+            <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="DiaChi" class="form-label"></label>
+            <input asp-for="DiaChi" class="form-control" />
+            <span asp-validation-for="DiaChi" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Gmail" class="form-label"></label>
+            <input asp-for="Gmail" class="form-control" />
+            <span asp-validation-for="Gmail" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="TrinhDoHocVan" class="form-label"></label>
+            <select asp-for="TrinhDoHocVan" class="form-select">
+                <option value="">-- Chọn trình độ --</option>
+                <option>Đã tốt nghiệp THPT</option>
+                <option>Đang học lớp 12</option>
+                <option>Khác</option>
+            </select>
+            <span asp-validation-for="TrinhDoHocVan" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="DangHocTruong" class="form-label"></label>
+            <input asp-for="DangHocTruong" class="form-control" />
+            <span asp-validation-for="DangHocTruong" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="NganhHocQuanTam" class="form-label">Ngành học quan tâm</label>
+            <select asp-for="NganhHocQuanTam" class="form-select" asp-items="Model.DanhSachNganhNghe">
+                <option value="">-- Chọn ngành nghề --</option>
+            </select>
+            <span asp-validation-for="NganhHocQuanTam" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="HoTenPhuHuynh" class="form-label"></label>
+            <input asp-for="HoTenPhuHuynh" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="SoDienThoaiPhuHuynh" class="form-label"></label>
+            <input asp-for="SoDienThoaiPhuHuynh" class="form-control" />
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="NguoiPhuTrach" class="form-label"></label>
+            <select asp-for="NguoiPhuTrach" class="form-select" asp-items="Model.DanhSachQuanTriVien">
+                <option value="">-- Chọn người phụ trách --</option>
+            </select>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="TrangThai" class="form-label"></label>
+            <select asp-for="TrangThai" class="form-select">
+                <option value="Chưa liên hệ">Chưa liên hệ</option>
+                <option value="Liên hệ lại sau">Liên hệ lại sau</option>
+                <option value="Đã hẹn test">Đã hẹn test</option>
+                <option value="Ưu tiên">Ưu tiên</option>
+                <option value="Không liên lạc được">Không liên lạc được</option>
+                <option value="Đã đến trung tâm">Đã đến trung tâm</option>
+                <option value="Không có nhu cầu">Không có nhu cầu</option>
+            </select>
+        </div>
+
+        <div class="col-md-12">
+            <label asp-for="GhiChu" class="form-label"></label>
+            <textarea asp-for="GhiChu" class="form-control" rows="3"></textarea>
+        </div>
+    </div>
+
+    <div class="mt-3">
+        <button type="submit" class="btn btn-success">💾 Lưu</button>
+        <a href="@Url.Action("Index", "DanhSachTuVan")" class="btn btn-secondary">🔙 Quay lại</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

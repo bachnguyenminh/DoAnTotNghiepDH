@@ -1,0 +1,9 @@
+﻿.form-tuvan .form-control,
+.form-tuvan .form-select {
+    border-radius: 6px;
+    min-height: 38px;
+}
+
+.form-tuvan label {
+    font-weight: 600;
+}

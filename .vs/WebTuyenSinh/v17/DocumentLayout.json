@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\controllers\\danhsachtuvancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:controllers\\danhsachtuvancontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|c:\\users\\admin\\source\\repos\\webtuyensinh\\controllers\\danhsachxettuyencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC5FA0C7-15DA-4A13-BF6E-4913BE435FEA}|WebTuyenSinh.csproj|solutionrelative:controllers\\danhsachxettuyencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DanhSachTuVanController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\DanhSachTuVanController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DanhSachTuVanController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\DanhSachTuVanController.cs",
+              "RelativeToolTip": "Controllers\\DanhSachTuVanController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAswCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:49:10.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwCYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:45:12.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DanhSachXetTuyenController.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\DanhSachXetTuyenController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DanhSachXetTuyenController.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\Controllers\\DanhSachXetTuyenController.cs",
+              "RelativeToolTip": "Controllers\\DanhSachXetTuyenController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-16T13:46:06.948Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

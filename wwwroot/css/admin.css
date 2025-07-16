@@ -1,0 +1,21 @@
+﻿body.admin-layout {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar {
+    width: 240px;
+    min-height: 100vh;
+    position: fixed;
+}
+
+    .sidebar .nav-link {
+        padding: 12px 16px;
+        border-radius: 4px;
+        margin: 2px 0;
+    }
+
+        .sidebar .nav-link.active,
+        .sidebar .nav-link:hover {
+            background-color: #343a40;
+            color: #fff;
+        }

@@ -1,0 +1,131 @@
+﻿/* TuVan.css */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header menu */
+.menu-header {
+    background-color: #1679ff;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 16px 20px;
+}
+
+    /* Logo + tên trường */
+    .menu-header > div:first-child {
+        display: flex;
+        align-items: center;
+        flex: 1 1 auto;
+        min-width: 250px;
+    }
+
+    .menu-header img {
+        height: 48px;
+        margin-right: 12px;
+    }
+
+    .menu-header span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* Các mục menu */
+    .menu-header a {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 6px 8px;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 999px;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+        border: 2px solid transparent;
+    }
+
+        /* Hover: nền trắng, chữ xanh, đổ bóng nhẹ */
+        .menu-header a:hover {
+            background-color: white;
+            color: #1679ff;
+            border: 2px solid white;
+            box-shadow: 0 5px 12px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05);
+        }
+
+        /* Không giữ trạng thái sau click */
+        .menu-header a:focus,
+        .menu-header a:active {
+            background-color: transparent;
+            color: white;
+            border: 2px solid transparent;
+            outline: none;
+        }
+
+    /* Thông tin liên hệ */
+    .menu-header div {
+        color: white;
+        font-size: 14px;
+        text-align: center;
+        margin: 5px;
+    }
+
+/* Main content */
+main.container {
+    padding: 30px 20px;
+}
+
+/* Form đăng ký */
+.form-container {
+    background-color: #eaf2ff;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+    .form-container input,
+    .form-container select {
+        border-radius: 12px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        .menu-header > div {
+            margin-bottom: 8px;
+        }
+}
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: #3874f2; /* hoặc màu của header */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Thêm padding top để tránh nội dung bị che */
+body {
+    padding-top: 100px; /* bằng chiều cao header */
+}

@@ -1,0 +1,41 @@
+﻿@model WebTuyenSinh.ViewModels.DangNhapViewModel
+@{
+    Layout = null; // layout riêng
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <title>Đăng nhập quản trị</title>
+    <link rel="stylesheet" href="~/css/DangNhap.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <div class="login-container">
+        <h2>Đăng nhập tài khoản quản trị</h2>
+
+        <form asp-action="DangNhap" method="post">
+            <div class="form-group">
+                <label asp-for="TenDangNhap"></label>
+                <input asp-for="TenDangNhap" type="text" />
+            </div>
+
+            <div class="form-group" style="position: relative;">
+                <label asp-for="MatKhau"></label>
+                <input asp-for="MatKhau" type="password" id="MatKhau" />
+                <i id="togglePassword" class="fas fa-eye toggle-password"></i>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Đăng nhập</button>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="~/js/DangNhap.js"></script>
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+</body>
+</html>

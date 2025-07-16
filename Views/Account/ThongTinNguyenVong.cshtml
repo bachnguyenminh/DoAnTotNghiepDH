@@ -1,0 +1,106 @@
+﻿@model WebTuyenSinh.ViewModels.DangKyNguyenVongVM
+
+@{
+    ViewData["Title"] = "Thông tin nguyện vọng";
+}
+
+<!-- Kết nối CSS -->
+@section Styles {
+    <link rel="stylesheet" href="~/css/ThongTinNguyenVong.css" />
+}
+
+<div class="container">
+    <h1>Xét Tuyển Đợt 1</h1>
+
+    <div class="nguyen-vong-container">
+        @for (int i = 1; i <= 7; i++)
+        {
+            // Lấy giá trị của các thuộc tính nguyện vọng từ ViewModel
+            var tenNghe = (string?)@Model.GetType().GetProperty($"TenNghe{i}")?.GetValue(Model);
+            var maNghe = (string?)@Model.GetType().GetProperty($"MaNghe{i}")?.GetValue(Model);
+            var trangThai = (string?)@Model.GetType().GetProperty($"TrangThai{i}")?.GetValue(Model);
+
+            // Kiểm tra nếu có dữ liệu cho Nguyện vọng i
+            if (!string.IsNullOrEmpty(tenNghe) && !string.IsNullOrEmpty(maNghe))
+            {
+                <div class="nguyen-vong-item">
+                    <div class="row">
+                        <!-- Cột 1: Nguyện vọng -->
+                        <div class="col-md-6">
+                            <div class="nguyen-vong-details">
+                                <p><strong>Tên nghề:</strong> @tenNghe</p>
+                                <p><strong>Mã nghề:</strong> @maNghe</p>
+                            </div>
+                        </div>
+
+                        <!-- Cột 2: Trạng thái -->
+                        <div class="col-md-6">
+                            <div class="nguyen-vong-status">
+                                @if (trangThai == "0")
+                                {
+                                    <span class="status-processing">Đang xử lý</span>
+                                }
+                                else if (trangThai == "1")
+                                {
+                                    <span class="status-completed">Đã có kết quả</span>
+                                }
+                                else
+                                {
+                                    <span class="status-pending">Chưa có kết quả</span>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+        <!-- Kiểm tra trạng thái của tất cả nguyện vọng -->
+        @{
+            bool allProcessing = true;
+            bool allCompleted = true;
+
+            for (int i = 1; i <= 7; i++)
+            {
+                var trangThai = (string?)@Model.GetType().GetProperty($"TrangThai{i}")?.GetValue(Model);
+
+                if (trangThai != "0")
+                {
+                    allProcessing = false;
+                }
+
+                if (trangThai != "1")
+                {
+                    allCompleted = false;
+                }
+            }
+        }
+
+        <!-- Nút Xem chi tiết -->
+        <div class="text-center">
+            @if (allProcessing)
+            {
+                <!-- Nếu tất cả nguyện vọng đều đang xử lý -->
+                <div class="alert alert-warning">
+                    Tất cả các nguyện vọng vẫn đang chờ xử lý. Vui lòng chờ đợi kết quả.
+                </div>
+            }
+            else if (allCompleted)
+            {
+                <!-- Nếu tất cả nguyện vọng đã có kết quả -->
+                <a href="@Url.Action("Details", "Account")" class="btn btn-primary">Xem chi tiết</a>
+            }
+            else
+            {
+                <!-- Nếu có nguyện vọng đang xử lý và có nguyện vọng đã có kết quả -->
+                <a href="@Url.Action("Details", "Account")" class="btn btn-primary">Xem chi tiết</a>
+            }
+        </div>
+    </div>
+
+</div>
+
+<!-- Kết nối JS -->
+@section Scripts {
+    <script src="~/js/ThongTinNguyenVong.js"></script>
+}

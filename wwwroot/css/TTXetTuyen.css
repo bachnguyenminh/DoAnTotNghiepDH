@@ -1,0 +1,97 @@
+﻿/* Container chính */
+.form-container {
+    max-width: 980px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+
+    /* Tiêu đề chính */
+    .form-container h3 {
+        text-align: center;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #2c3e50;
+    }
+
+/* Alert thông báo */
+.alert {
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+}
+
+/* Fieldset & Legend */
+fieldset {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0 12px;
+    color: #0d6efd;
+}
+
+/* Label và input */
+label {
+    font-weight: 500;
+    margin-bottom: 4px;
+    display: block;
+}
+
+input.form-control,
+select.form-select {
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+/* Input number placeholder */
+input[type="number"]::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* Nút lưu */
+button.btn-success {
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+/* Giãn khoảng giữa các dòng input */
+.row > div {
+    margin-bottom: 15px;
+}
+
+/* Ẩn nhóm điểm chứng chỉ nếu cần (js xử lý) */
+#diemChungChiGroup,
+#diemDanhGiaGroup {
+    transition: all 0.3s ease;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 576px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .col-md-4,
+    .col-md-6,
+    .col-md-3 {
+        margin-bottom: 15px;
+    }
+
+    button.btn-success {
+        width: 100%;
+    }
+}

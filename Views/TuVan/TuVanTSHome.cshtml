@@ -1,0 +1,173 @@
+﻿@model WebTuyenSinh.ViewModels.TuVanVM
+@{
+    Layout = "_TuVanLayout";
+    ViewData["Title"] = "Đăng ký giữ chỉ tiêu";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/DangKyTuVan.css?v=10" asp-append-version="true" />
+}
+
+<div class="dk-page-wrapper">
+
+    <!-- BOX 1: FORM ĐĂNG KÝ -->
+    <section class="dk-top-form" id="form">
+        <div class="dk-left">
+            <h1>4000 SUẤT HỌC BỔNG</h1>
+            <h2>Trị giá lên đến <span>70 tỷ</span> dành riêng cho 2k7</h2>
+
+            @if (TempData["ThongBao"] != null)
+            {
+                <div id="alertThongBao" class="floating-alert">@TempData["ThongBao"]</div>
+            }
+            @if (TempData["LoiTrung"] != null)
+            {
+                <div class="alert alert-danger text-center" id="alertLoiTrung">@TempData["LoiTrung"]</div>
+            }
+
+            <form asp-action="DangKy" method="post" class="dk-form">
+                <input asp-for="HoVaTen" placeholder="Họ và Tên" required class="dk-input" />
+                <input asp-for="NamSinh" type="date" class="dk-input" required />
+                <input asp-for="SoDienThoai" placeholder="Số điện thoại" required class="dk-input" />
+                <input asp-for="DiaChi" placeholder="Nơi ở hiện tại" class="dk-input" />
+                <input asp-for="Gmail" placeholder="Email" class="dk-input" />
+                <select asp-for="TrinhDoHocVan" class="dk-input">
+                    <option value="" disabled selected hidden>-- Chọn trình độ học vấn --</option>
+                    <option value="Đã tốt nghiệp THPT">Đã tốt nghiệp THPT</option>
+                    <option value="Đã tốt nghiệp bổ túc THPT">Đã tốt nghiệp bổ túc THPT</option>
+                    <option value="Đã tốt nghiệp Trung Cấp">Đã tốt nghiệp Trung Cấp</option>
+                </select>
+                <select asp-for="NganhHocQuanTam" asp-items="Model.DanhSachNganhNghe" class="dk-input">
+                    <option value="" disabled selected hidden>-- Chọn ngành học quan tâm --</option>
+                </select>
+                <button type="submit" class="btn-submit">Đăng ký ngay</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- BOX 2: LÝ DO CHỌN TRƯỜNG -->
+    <section class="reason-box">
+        <div class="reason-overlay">
+            <h2 class="reason-title">TOP LÝ DO CHỌN <span>Hà Nội ĐTĐT College</span></h2>
+
+            <div class="reason-list">
+                <div class="reason-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2278/2278992.png" alt="Không cần điểm chuẩn" />
+                    <p>Không cần điểm chuẩn<br />cao chót vót</p>
+                </div>
+                <div class="reason-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1048/1048953.png" alt="Xét tuyển THPT" />
+                    <p>Xét tuyển chỉ cần tốt nghiệp THPT</p>
+                </div>
+                <div class="reason-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135789.png" alt="2 năm tốt nghiệp" />
+                    <p>Học 2 năm – ra trường sớm</p>
+                </div>
+                <div class="reason-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Việc làm cao" />
+                    <p>97,7% sinh viên có việc<br />sau khi tốt nghiệp</p>
+                </div>
+            </div>
+
+            <!-- Nút đăng ký xét tuyển -->
+            <div class="btn-dangky-wrapper">
+                <a href="/Account/Login" class="btn-dangky">
+                    <span>🚀 Đăng ký xét tuyển ngay</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="poly-section">
+        <h2 class="section-title">ĐA DẠNG CHUYÊN NGÀNH – HỌC ĐỂ CÓ VIỆC LÀM NGAY</h2>
+        <div class="major-tags">
+            <span data-id="beauty">Chăm sóc sắc đẹp</span>
+            <span data-id="cold">Công nghệ nhiệt lạnh</span>
+            <span data-id="it">Công nghệ thông tin và truyền thông</span>
+            <span data-id="automation">Điện tự động hóa</span>
+            <span data-id="telecom">Điện tử viễn thông</span>
+        </div>
+
+
+        <!-- Giao diện hiển thị chi tiết ngành -->
+        <div id="major-detail" class="major-detail-box" style="display: none;">
+            <img id="major-img" src="" alt="Ngành học" />
+            <div id="major-desc"></div>
+        </div>
+
+</section>
+    <!-- BOX 4: HỌC BỔNG -->
+    <section class="hocbong-box">
+        <div class="hocbong-card">
+            <div class="hocbong-text">
+                <h3>🎓 HỌC BỔNG TRONG TẦM TAY</h3>
+                <p>Ưu đãi học bổng lên đến <strong>30% toàn khóa</strong><br>Trị giá <strong>23.900.000 VNĐ</strong></p>
+                <ul>
+                    <li>🏅 Học sinh đạt thành tích HSG cấp tỉnh/thành phố</li>
+                    <li>🎖 Có thành tích hoạt động Đoàn - Đội - Thể thao</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BOX 5: HOẠT ĐỘNG SINH VIÊN -->
+    <section class="hoatdong-section">
+        <h2 class="section-title">HOẠT ĐỘNG SINH VIÊN TẠI HÀ NỘI ĐTĐT COLLEGE</h2>
+
+        <div class="slider-container">
+            <button class="arrow left" id="btn-left">&#10094;</button>
+
+            <div class="slider-track" id="slider-track">
+                <div class="slider-item">
+                    <img src="https://i.imgur.com/GuG89ta.jpg" alt="Poly Run" />
+                    <p>Poly Run 2025</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://i.imgur.com/NrkQ04E.jpg" alt="Tham quan doanh nghiệp" />
+                    <p>Tham quan doanh nghiệp</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://i.imgur.com/XJZqzFV.jpg" alt="Champion Cup" />
+                    <p>Champion Cup thể thao</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://i.imgur.com/MEfPfTu.jpg" alt="Vovinam" />
+                    <p>Vovinam – Hào khí võ Việt</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://i.imgur.com/Vvuyya7.jpg" alt="Giải game học đường" />
+                    <p>Giải game học đường</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://i.imgur.com/ONFb2C9.jpg" alt="Dã ngoại" />
+                    <p>Dã ngoại & cắm trại</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://i.imgur.com/Jfwe9WR.jpg" alt="Tình nguyện" />
+                    <p>Chiến dịch tình nguyện</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://i.imgur.com/Bk3TogG.jpg" alt="Âm nhạc sinh viên" />
+                    <p>Cuộc thi âm nhạc sinh viên</p>
+                </div>
+                <div class="slider-item">
+                    <img src="https://i.imgur.com/RHREq0V.jpg" alt="Ngày hội sáng tạo" />
+                    <p>Ngày hội sáng tạo trẻ</p>
+                </div>
+            </div>
+
+            <button class="arrow right" id="btn-right">&#10095;</button>
+        </div>
+    </section>
+
+
+
+</div>
+
+@section Scripts {
+    <script src="~/js/DangKyTuVan.js" asp-append-version="true"></script>
+}
+ 

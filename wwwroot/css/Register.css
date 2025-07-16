@@ -1,0 +1,88 @@
+﻿/* Căn giữa toàn trang */
+.register-wrapper {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 600px;
+}
+
+/* Khung đăng ký thu nhỏ */
+.register-card {
+    width: 100%;
+    max-width: 360px; /* hẹp hơn */
+    background: #fff;
+    padding: 22px 20px; /* bớt rộng */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    position: relative;
+}
+
+/* Nút đóng [×] */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 22px; /* nhỏ hơn */
+    color: #999;
+    text-decoration: none;
+    line-height: 1;
+}
+
+    .close-btn:hover {
+        color: #dc3545
+    }
+
+/* Tiêu đề */
+.card-title {
+    text-align: center;
+    font-size: 1.25rem; /* nhỏ hơn */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Input & Select */
+.register-card .form-control,
+.register-card .form-select {
+    height: 38px; /* thấp hơn */
+    font-size: 14px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+/* Nhóm icon mắt */
+/* ----- Nút mắt khớp chiều cao ô nhập ----- */
+.input-group-text.toggle-password {
+    cursor: pointer;
+    background: #e9ecef;
+    height: 38px; /* đúng bằng .form-control */
+    padding: 0 0.75rem; /* vừa icon */
+    border: none;
+    border-radius: 0 8px 8px 0; /* bo góc khớp input */
+    display: flex;
+    align-items: center; /* căn giữa icon */
+}
+
+.toggle-password i {
+    font-size: 1rem; /* icon nhỏ gọn */
+    color: #666;
+}
+
+.toggle-password:hover i {
+    color: #333
+}
+
+
+/* Nút submit */
+.register-card .btn {
+    width: 100%;
+    font-size: 16px; /* nhỏ */
+    font-weight: 600;
+    padding: 8px;
+}
+
+/* Validation text nhỏ gọn */
+.text-danger.small {
+    font-size: 12px
+}
