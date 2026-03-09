@@ -27,7 +27,8 @@ public partial class AccountController
         if (string.IsNullOrEmpty(cccd))
             return RedirectToAction("Login");
 
-        var existing = await _ctx.ThongTinXetTuyen.FirstOrDefaultAsync(x => x.CCCD == cccd);
+        var cccdEnc = Enc(cccd);
+        var existing = await _ctx.ThongTinXetTuyen.FirstOrDefaultAsync(x => x.CCCD == cccdEnc);
         var vm = new ThongTinXetTuyenVM
         {
             CCCD = cccd,
@@ -50,7 +51,9 @@ public partial class AccountController
             vm.TruongHocLop12 = Dec(existing.TruongHocLop12);
 
             vm.KhuVucUuTien = Dec(existing.KhuVucUuTien);
+            vm.DiemKhuVucUuTien = DecFloat(existing.DiemKhuVucUuTien);
             vm.DoiTuongUuTien = Dec(existing.DoiTuongUuTien);
+            vm.DiemDoiTuongUuTien = DecFloat(existing.DiemDoiTuongUuTien);
             vm.ChungChi = Dec(existing.ChungChi);
             vm.DiemChungChi = DecFloat(existing.DiemChungChi);
             vm.DanhGiaNangLuc = Dec(existing.DanhGiaNangLuc);
@@ -71,6 +74,8 @@ public partial class AccountController
             vm.TiengTrung = DecFloat(existing.TiengTrung);
             vm.TiengNhat = DecFloat(existing.TiengNhat);
             vm.TiengHan = DecFloat(existing.TiengHan);
+            vm.DiemA00 = DecFloat(existing.DiemA00);
+            vm.DiemD01 = DecFloat(existing.DiemD01);
         }
 
         return View(vm);
@@ -94,7 +99,7 @@ public partial class AccountController
             return View(vm);
 
         var cccdEnc = Enc(vm.CCCD);
-        var existing = await _ctx.ThongTinXetTuyen.FirstOrDefaultAsync(x => x.CCCD == vm.CCCD);
+        var existing = await _ctx.ThongTinXetTuyen.FirstOrDefaultAsync(x => x.CCCD == cccdEnc);
 
         void GanThongTin(ThongTinXetTuyen info)
         {
@@ -111,7 +116,9 @@ public partial class AccountController
             info.TruongHocLop12 = Enc(vm.GiongLop10_Lop12 ? vm.TruongHocLop10 : vm.TruongHocLop12);
 
             info.KhuVucUuTien = Enc(vm.KhuVucUuTien);
+            info.DiemKhuVucUuTien = EncFloat(vm.DiemKhuVucUuTien);
             info.DoiTuongUuTien = Enc(vm.DoiTuongUuTien);
+            info.DiemDoiTuongUuTien = EncFloat(vm.DiemDoiTuongUuTien);
             info.ChungChi = Enc(vm.ChungChi);
             info.DiemChungChi = EncFloat(vm.DiemChungChi);
             info.DanhGiaNangLuc = Enc(vm.DanhGiaNangLuc);
@@ -132,6 +139,8 @@ public partial class AccountController
             info.TiengTrung = EncFloat(vm.TiengTrung);
             info.TiengNhat = EncFloat(vm.TiengNhat);
             info.TiengHan = EncFloat(vm.TiengHan);
+            info.DiemA00 = EncFloat(vm.DiemA00);
+            info.DiemD01 = EncFloat(vm.DiemD01);
         }
 
         if (existing != null)

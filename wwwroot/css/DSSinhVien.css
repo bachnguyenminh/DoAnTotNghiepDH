@@ -1,0 +1,22 @@
+﻿.bang-sinh-vien-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    font-size: 14px;
+}
+
+th, td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.action-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-action, .btn-search {
+    padding: 6px 12px;
+}

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\WebTuyenSinh.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\DSSinhVien.css",
+      "PackagePath": "staticwebassets\\css\\DSSinhVien.css"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\DSTuVanSua.css",
       "PackagePath": "staticwebassets\\css\\DSTuVanSua.css"
     },
@@ -19,6 +23,14 @@
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\DangNhap.css",
       "PackagePath": "staticwebassets\\css\\DangNhap.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\DanhSachNganhNghe.css",
+      "PackagePath": "staticwebassets\\css\\DanhSachNganhNghe.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\DanhSachTaiKhoanSinhVien.css",
+      "PackagePath": "staticwebassets\\css\\DanhSachTaiKhoanSinhVien.css"
     },
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\DanhSachTuVan.css",
@@ -37,8 +49,16 @@
       "PackagePath": "staticwebassets\\css\\ThongTinNguyenVong.css"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\XoaTaiKhoan.css",
+      "PackagePath": "staticwebassets\\css\\XoaTaiKhoan.css"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\admin.css",
       "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\bieudo.css",
+      "PackagePath": "staticwebassets\\css\\bieudo.css"
     },
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\footer.css",
@@ -51,6 +71,10 @@
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\khaiBaoThongTin.css",
       "PackagePath": "staticwebassets\\css\\khaiBaoThongTin.css"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\lichsudangnhap.css",
+      "PackagePath": "staticwebassets\\css\\lichsudangnhap.css"
     },
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\css\\login.css",
@@ -81,6 +105,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\DSSinhVien.js",
+      "PackagePath": "staticwebassets\\js\\DSSinhVien.js"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\DangKyNguyenVong.js",
       "PackagePath": "staticwebassets\\js\\DangKyNguyenVong.js"
     },
@@ -91,6 +119,14 @@
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\DangNhap.js",
       "PackagePath": "staticwebassets\\js\\DangNhap.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\DanhSachNganhNghe.js",
+      "PackagePath": "staticwebassets\\js\\DanhSachNganhNghe.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\DanhSachTaiKhoanSinhVien.js",
+      "PackagePath": "staticwebassets\\js\\DanhSachTaiKhoanSinhVien.js"
     },
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\DanhSachTuVan.js",
@@ -113,8 +149,16 @@
       "PackagePath": "staticwebassets\\js\\TuVan.js"
     },
     {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\XoaTaiKhoan.js",
+      "PackagePath": "staticwebassets\\js\\XoaTaiKhoan.js"
+    },
+    {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\admin.js",
       "PackagePath": "staticwebassets\\js\\admin.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\bieudo.js",
+      "PackagePath": "staticwebassets\\js\\bieudo.js"
     },
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\footer.js",
@@ -127,6 +171,10 @@
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\khaiBaoThongTin.js",
       "PackagePath": "staticwebassets\\js\\khaiBaoThongTin.js"
+    },
+    {
+      "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\lichsudangnhap.js",
+      "PackagePath": "staticwebassets\\js\\lichsudangnhap.js"
     },
     {
       "Id": "C:\\Users\\ADMIN\\source\\repos\\WebTuyenSinh\\wwwroot\\js\\login.js",

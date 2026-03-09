@@ -1,0 +1,138 @@
+﻿/* Thanh navbar */
+.main-navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+    gap: 30px;
+    font-size: 16px;
+}
+
+    .main-navbar a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        transition: color 0.2s, transform 0.2s;
+    }
+
+        .main-navbar a:hover {
+            color: #0056b3;
+            transform: scale(1.1);
+        }
+
+
+/* Thanh công cụ (nút chức năng) */
+.action-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    gap: 8px;
+}
+
+.search-input {
+    padding: 7px 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 220px;
+}
+
+.btn-search {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+    .btn-search:hover {
+        background-color: #0056b3;
+    }
+
+
+/* Nút chức năng */
+.btn-action {
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+    .btn-action:hover {
+        opacity: 0.9;
+        transform: scale(1.05);
+    }
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-outline-success {
+    border: 1px solid #28a745;
+    color: #28a745;
+}
+
+    .btn-outline-success:hover {
+        background-color: #28a745;
+        color: white;
+    }
+
+.btn-outline-info {
+    border: 1px solid #17a2b8;
+    color: #17a2b8;
+}
+
+    .btn-outline-info:hover {
+        background-color: #17a2b8;
+        color: white;
+    }
+
+.btn-outline-dark {
+    border: 1px solid #343a40;
+    color: #343a40;
+}
+
+    .btn-outline-dark:hover {
+        background-color: #343a40;
+        color: white;
+    }
+.img-preview {
+    width: 80px;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    object-fit: cover;
+}
+.action-bar {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.table th, .table td {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.bang-nguyen-vong-wrapper {
+    overflow-x: auto;
+}

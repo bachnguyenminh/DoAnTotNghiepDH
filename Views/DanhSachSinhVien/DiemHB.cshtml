@@ -1,0 +1,130 @@
+﻿@model List<WebTuyenSinh.Models.ThongTinXetTuyen>
+
+@{
+    ViewData["Title"] = "Thông tin xét tuyển";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/DanhSachTaiKhoanSinhVien.css" />
+
+<nav class="main-navbar">
+    <a href="/DanhSachSinhVien/Index">Danh sách tài khoản</a>
+    <a href="/DanhSachSinhVien/ThongTin">Thông tin sinh viên</a>
+    <a href="/DanhSachSinhVien/DiemHB" class="active">Thông tin xét tuyển</a>
+    <a href="/DanhSachSinhVien/NguyenVong">Nguyện vọng sinh viên</a>
+</nav>
+
+<h2 class="text-center text-primary mb-4">📋 Bảng thông tin xét tuyển (đầy đủ cột)</h2>
+
+<div class="action-bar mb-3">
+    <a href="/DanhSachSinhVien/XuatExcelXetTuyen" class="btn-action btn-outline-success">📥 Xuất Excel</a>
+    <a href="/DanhSachSinhVien/XuatPDFXetTuyen" target="_blank" class="btn-action btn-outline-info">📄 Xuất PDF</a>
+    <button type="button" class="btn-action btn-outline-dark" onclick="printTable()">🖨️ In bảng</button>
+</div>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead class="table-dark text-center">
+            <tr>
+                <th>CCCD</th>
+                <th>Trường 10</th>
+                <th>Tỉnh 10</th>
+                <th>Huyện 10</th>
+                <th>Trường 11</th>
+                <th>Tỉnh 11</th>
+                <th>Huyện 11</th>
+                <th>Trường 12</th>
+                <th>Tỉnh 12</th>
+                <th>Huyện 12</th>
+                <th>Khu vực</th>
+                <th>Điểm KV</th>
+                <th>Đối tượng</th>
+                <th>Điểm ĐT</th>
+                <th>Chứng chỉ</th>
+                <th>Điểm CC</th>
+                <th>ĐG Năng lực</th>
+                <th>Điểm NL</th>
+                <th>Toán</th>
+                <th>Văn</th>
+                <th>Lịch sử</th>
+                <th>Địa lý</th>
+                <th>GDCD</th>
+                <th>Vật lý</th>
+                <th>Hóa học</th>
+                <th>Sinh học</th>
+                <th>CNTT</th>
+                <th>Tiếng Anh</th>
+                <th>Tiếng Nga</th>
+                <th>Tiếng Đức</th>
+                <th>Tiếng Trung</th>
+                <th>Tiếng Nhật</th>
+                <th>Tiếng Hàn</th>
+                <th>Điểm A00</th>
+                <th>Điểm D01</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.CCCD</td>
+                        <td>@item.TruongHocLop10</td>
+                        <td>@item.TinhThanhLop10</td>
+                        <td>@item.QuanHuyenLop10</td>
+                        <td>@item.TruongHocLop11</td>
+                        <td>@item.TinhThanhLop11</td>
+                        <td>@item.QuanHuyenLop11</td>
+                        <td>@item.TruongHocLop12</td>
+                        <td>@item.TinhThanhLop12</td>
+                        <td>@item.QuanHuyenLop12</td>
+                        <td>@item.KhuVucUuTien</td>
+                        <td>@item.DiemKhuVucUuTien</td>
+                        <td>@item.DoiTuongUuTien</td>
+                        <td>@item.DiemDoiTuongUuTien</td>
+                        <td>@item.ChungChi</td>
+                        <td>@item.DiemChungChi</td>
+                        <td>@item.DanhGiaNangLuc</td>
+                        <td>@item.DiemDanhGiaNangLuc</td>
+                        <td>@item.Toan</td>
+                        <td>@item.NguVan</td>
+                        <td>@item.LichSu</td>
+                        <td>@item.DiaLy</td>
+                        <td>@item.GDCD</td>
+                        <td>@item.VatLy</td>
+                        <td>@item.HoaHoc</td>
+                        <td>@item.SinhHoc</td>
+                        <td>@item.CongNgheTinHoc</td>
+                        <td>@item.TiengAnh</td>
+                        <td>@item.TiengNga</td>
+                        <td>@item.TiengDuc</td>
+                        <td>@item.TiengTrung</td>
+                        <td>@item.TiengNhat</td>
+                        <td>@item.TiengHan</td>
+                        <td>@item.DiemA00</td>
+                        <td>@item.DiemD01</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="36" class="text-center text-muted">Không có dữ liệu.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@section Scripts {
+    <script src="~/js/DanhSachTaiKhoanSinhVien.js"></script>
+}
+
+<style>
+    .table th, .table td {
+        font-size: 13px;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+</style>

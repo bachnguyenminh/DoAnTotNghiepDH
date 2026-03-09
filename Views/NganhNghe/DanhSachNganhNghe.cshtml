@@ -1,0 +1,85 @@
+﻿@model List<WebTuyenSinh.Models.NganhNghe>
+
+@{
+    ViewData["Title"] = "Danh sách ngành nghề";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/DanhSachNganhNghe.css" />
+
+<h2 class="text-center text-primary mb-4">📋 Danh sách ngành nghề</h2>
+
+@if (TempData["ThongBao"] != null)
+{
+    <div class="alert alert-success text-center">@TempData["ThongBao"]</div>
+}
+
+<div class="action-bar">
+    <form method="get" asp-action="DanhSachNganhNghe" class="search-form">
+        <input type="text" name="tuKhoa" value="@ViewBag.TuKhoa" class="search-input" placeholder="🔍 Tìm kiếm..." />
+        <button type="submit" class="btn-search">Tìm</button>
+    </form>
+
+    <a href="/NganhNghe/XuatExcel" class="btn-action btn-outline-success">📥 Xuất Excel</a>
+    <a href="/NganhNghe/XuatPDF" target="_blank" class="btn-action btn-outline-info">📄 Xuất PDF</a>
+    <button type="button" class="btn-action btn-outline-dark" onclick="printTable()">🖨️ In bảng</button>
+</div>
+
+<div class="mb-3">
+    <b>Trạng thái xuất bản:</b>
+    <span class="badge bg-@(ViewBag.TrangThai.ToString().Contains("ON") ? "success" : "secondary")">
+        @ViewBag.TrangThai
+    </span>
+</div>
+
+<table class="table table-bordered table-striped" id="bangNganhNghe">
+    <thead class="table-dark">
+        <tr class="text-center">
+            <th>Mã nghề</th>
+            <th>Tên nghề</th>
+            <th>Tên ngành</th>
+            <th>Tổ hợp môn</th>
+            <th>Điểm chuẩn</th>
+            <th>Chỉ tiêu</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.MaNghe</td>
+                    <td>@item.TenNghe</td>
+                    <td>@item.TenNganh</td>
+                    <td>@item.ToHopMon</td>
+                    <td class="text-center">@item.DiemTrungTuyen</td>
+                    <td class="text-center">@item.ChiTieu</td>
+                    <td class="text-center">
+                        <a class="btn btn-sm btn-warning" href="@Url.Action("Sua", "NganhNghe", new { id = item.MaNghe })">✏️ Sửa</a>
+                        <a class="btn btn-sm btn-danger" href="@Url.Action("Xoa", "NganhNghe", new { id = item.MaNghe })" onclick="return confirm('Xác nhận xóa ngành nghề này?')">🗑️ Xóa</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="7" class="text-center text-muted">Không có dữ liệu ngành nghề.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<form asp-action="XuatBanNganhNghe" method="post" class="d-inline">
+    <button type="submit" class="btn btn-success">✅ Xuất bản ngành nghề</button>
+</form>
+
+<form asp-action="ThuHoiNganhNghe" method="post" class="d-inline">
+    <button type="submit" class="btn btn-danger">⛔ Thu hồi ngành nghề</button>
+</form>
+
+@section Scripts {
+    <script src="~/js/DanhSachNganhNghe.js"></script>
+}

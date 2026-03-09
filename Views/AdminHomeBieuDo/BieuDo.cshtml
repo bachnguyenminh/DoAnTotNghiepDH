@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Thống kê biểu đồ";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/bieudo.css" />
+
+<h2 class="text-center text-primary mb-4">📊 Thống kê hệ thống</h2>
+
+<div class="chart-container">
+    <canvas id="tuVanChart"></canvas>
+    <canvas id="taiKhoanChart"></canvas>
+</div>
+
+<div class="text-center mt-4">
+    <p><strong>Số sinh viên đã đăng ký nguyện vọng:</strong> @ViewBag.SoLuongNguyenVong</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="~/js/bieudo.js"></script>
+
+<script>
+        const tuVanData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.TuVanTheoNgay));
+    const taiKhoanData = @Html.Raw(System.Text.Json.JsonSerializer.Serialize(ViewBag.TaiKhoanTheoNgay));
+
+        renderBieuDo(tuVanData, taiKhoanData);
+</script>

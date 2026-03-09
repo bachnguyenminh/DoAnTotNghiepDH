@@ -97,6 +97,41 @@ document.addEventListener("DOMContentLoaded", function () {
                 alert('Không thể sao chép số.');
             });
     }
+    
+            function thucHienCuocGoi(soDienThoai) {
+            if (!soDienThoai) {
+                alert('Không có số điện thoại để gọi.');
+            return;
+            }
+
+            if (!confirm('Bạn có muốn gọi số: ' + soDienThoai + ' ?')) {
+                return;
+            }
+
+            fetch('/DanhSachTuVan/GoiDien', {
+                method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+                },
+            body: JSON.stringify({soDienThoai: soDienThoai })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Kết quả từ API:', data);
+
+            if (data.success) {
+                alert('📞 Cuộc gọi đang thực hiện...');
+                } else {
+                alert('❌ Lỗi: ' + (data.message || 'Không rõ nguyên nhân.'));
+                }
+            })
+            .catch(error => {
+                console.error('Lỗi:', error);
+            alert('❌ Lỗi khi gửi yêu cầu đến máy chủ.');
+            });
+        }
+    
+
 
 
 });

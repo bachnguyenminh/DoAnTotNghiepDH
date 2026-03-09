@@ -1,0 +1,30 @@
+﻿@model string
+
+@{
+    ViewData["Title"] = "Lịch sử đăng nhập";
+}
+
+<link rel="stylesheet" href="~/css/lichsudangnhap.css" />
+<script src="~/js/lichsudangnhap.js"></script>
+
+<h3>Lịch sử đăng nhập</h3>
+
+<div id="lich-su-container">
+    @if (!string.IsNullOrEmpty(Model))
+    {
+        var logs = Model.Split("───────────────────────────────");
+        foreach (var log in logs.Reverse())
+        {
+            if (!string.IsNullOrWhiteSpace(log))
+            {
+                <div class="lich-su-item">
+                    @Html.Raw(log.Trim().Replace("\n", "<br />"))
+                </div>
+            }
+        }
+    }
+    else
+    {
+        <p>Chưa có lịch sử đăng nhập.</p>
+    }
+</div>

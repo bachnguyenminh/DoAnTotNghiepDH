@@ -1,12 +1,31 @@
 ﻿@model List<WebTuyenSinh.Models.TaiKhoanQuanTri>
+
 @{
-    ViewData["Title"] = "Quản lý khách hàng";
+    ViewData["Title"] = "Tài khoản quản trị";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h3>Danh sách tài khoản quản trị</h3>
+<link rel="stylesheet" href="~/css/DanhSachTaiKhoanSinhVien.css" />
 
-<table class="table table-bordered table-striped">
+<h2 class="text-center text-primary mb-4">👤 Danh sách tài khoản quản trị</h2>
+
+@if (TempData["ThongBao"] != null)
+{
+    <div class="alert alert-success text-center">@TempData["ThongBao"]</div>
+}
+
+<div class="action-bar">
+    <form method="get" asp-action="Index" asp-controller="QuanTri" class="search-form">
+        <input type="text" name="tuKhoa" value="@ViewBag.TuKhoa" class="search-input" placeholder="🔍 Tìm kiếm theo tên đăng nhập hoặc họ tên..." />
+        <button type="submit" class="btn-search">Tìm</button>
+    </form>
+
+    <a href="/QuanTri/ThemMoi" class="btn-action btn-primary">➕ Thêm mới</a>
+    <a href="/QuanTri/XuatExcel" class="btn-action btn-outline-success">📥 Xuất Excel</a>
+    <button type="button" class="btn-action btn-outline-dark" onclick="printTable()">🖨️ In bảng</button>
+</div>
+
+<table class="table table-bordered table-striped text-center" id="bangTaiKhoanAdmin">
     <thead class="table-dark">
         <tr>
             <th>Tên đăng nhập</th>
@@ -14,18 +33,39 @@
             <th>Quyền hạn</th>
             <th>Trạng thái</th>
             <th>Ngày tạo</th>
+            <th>Thao tác</th>
         </tr>
     </thead>
     <tbody>
-        @foreach (var item in Model)
+        @if (Model != null && Model.Any())
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.TenDangNhap</td>
+                    <td>@item.HoTen</td>
+                    <td>@item.QuyenHan</td>
+                    <td class="fw-bold text-@(item.TrangThai ? "success" : "danger")">
+                        @(item.TrangThai ? "Hoạt động" : "Bị khóa")
+                    </td>
+                    <td>@item.NgayTao.ToString("dd/MM/yyyy")</td>
+                    <td>
+                        <a class="btn btn-sm btn-warning" href="@Url.Action("Sua", "QuanTri", new { id = item.TenDangNhap })">✏️ Sửa</a>
+                        <a class="btn btn-sm btn-danger" href="@Url.Action("Xoa", "QuanTri", new { id = item.TenDangNhap })"
+                           onclick="return confirm('Xác nhận xóa tài khoản này?')">🗑️ Xóa</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
         {
             <tr>
-                <td>@item.TenDangNhap</td>
-                <td>@item.HoTen</td>
-                <td>@item.QuyenHan</td>
-                <td>@(item.TrangThai ? "Hoạt động" : "Bị khóa")</td>
-                <td>@item.NgayTao.ToString("dd/MM/yyyy")</td>
+                <td colspan="6" class="text-center text-muted">Không có dữ liệu tài khoản quản trị.</td>
             </tr>
         }
     </tbody>
 </table>
+
+@section Scripts {
+    <script src="~/js/DanhSachTaiKhoanSinhVien.js"></script>
+}

@@ -11,7 +11,7 @@
 
 @if (TempData["ThongBao"] != null)
 {
-    <div class="alert alert-success text-center">@TempData["ThongBao"]</div>
+        <div class="alert alert-success text-center">@TempData["ThongBao"]</div>
 }
 
 <!-- Toolbar -->
@@ -89,59 +89,59 @@
                 {
                     foreach (var item in Model)
                     {
-                        <tr>
-                            <td><input type="checkbox" name="chonSinhVien" value="@item.SoDienThoai" /></td>
-                            <td>@item.HoVaTen</td>
-                            <td>@item.NamSinh</td>
-                            <td>
+                                <tr>
+                                    <td><input type="checkbox" name="chonSinhVien" value="@item.SoDienThoai" /></td>
+                                    <td>@item.HoVaTen</td>
+                                    <td>@item.NamSinh</td>
+                                    <td>
                                 @if (!string.IsNullOrEmpty(item.SoDienThoai))
                                 {
-                                    <div class="d-flex gap-2 justify-content-center">
-                                        <button type="button"
-                                                class="btn btn-sm btn-outline-success"
-                                                title="Sao chép số điện thoại"
-                                                onclick="copyToClipboard('@item.SoDienThoai')">
-                                            <i class="fa-solid fa-phone" style="color:limegreen;"></i>
-                                        </button>
-                                    </div>
+                                                <div class="d-flex gap-2 justify-content-center">
+                                                    <button type="button"
+                                                            class="btn btn-sm btn-outline-success"
+                                                            title="Sao chép số điện thoại"
+                                                            onclick="copyToClipboard('@item.SoDienThoai')">
+                                                        <i class="fa-solid fa-phone" style="color:limegreen;"></i>
+                                                    </button>
+                                                </div>
                                 }
-                            </td>
+                                    </td>
 
-                            <td>@item.SoDienThoai</td>
-                            <td>@item.NhaMang</td>
-                            <td>@item.DiaChi</td>
-                            <td>@item.Gmail</td>
-                            <td>@item.TrinhDoHocVan</td>
-                            <td>@item.DangHocTruong</td>
-                            <td>@item.NganhHocQuanTam</td>
-                            <td>@item.HoTenPhuHuynh</td>
-                            <td>@item.SoDienThoaiPhuHuynh</td>
-                            <td>@item.NgayDangKy</td>
-                            <td>@item.NguoiPhuTrach</td>
-                            <td>@item.ThoiGianPhanCong</td>
-                            <td>@item.TrangThai</td>
-                            <td>@item.GhiChu</td>
-                            <td>
-                                <button type="button" class="btn btn-sm btn-primary"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#suaModal"
-                                        data-id="@item.SoDienThoai">
-                                    ✏️
-                                </button>
-                                <a class="btn btn-sm btn-danger"
-                                   href="@Url.Action("Xoa", "DanhSachTuVan", new { id = item.SoDienThoai })"
-                                   onclick="return confirm('Xác nhận xóa?')">
-                                    🗑️
-                                </a>
-                            </td>
-                        </tr>
+                                    <td>@item.SoDienThoai</td>
+                                    <td>@item.NhaMang</td>
+                                    <td>@item.DiaChi</td>
+                                    <td>@item.Gmail</td>
+                                    <td>@item.TrinhDoHocVan</td>
+                                    <td>@item.DangHocTruong</td>
+                                    <td>@item.NganhHocQuanTam</td>
+                                    <td>@item.HoTenPhuHuynh</td>
+                                    <td>@item.SoDienThoaiPhuHuynh</td>
+                                    <td>@item.NgayDangKy</td>
+                                    <td>@item.NguoiPhuTrach</td>
+                                    <td>@item.ThoiGianPhanCong</td>
+                                    <td>@item.TrangThai</td>
+                                    <td>@item.GhiChu</td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm btn-primary"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#suaModal"
+                                                data-id="@item.SoDienThoai">
+                                            ✏️
+                                        </button>
+                                        <a class="btn btn-sm btn-danger"
+                                           href="@Url.Action("Xoa", "DanhSachTuVan", new { id = item.SoDienThoai })"
+                                           onclick="return confirm('Xác nhận xóa?')">
+                                            🗑️
+                                        </a>
+                                    </td>
+                                </tr>
                     }
                 }
                 else
                 {
-                    <tr>
-                        <td colspan="19" class="text-center text-muted">Không có dữ liệu.</td>
-                    </tr>
+                        <tr>
+                            <td colspan="19" class="text-center text-muted">Không có dữ liệu.</td>
+                        </tr>
                 }
             </tbody>
         </table>
@@ -149,5 +149,5 @@
 </form>
 
 @section Scripts {
-    <script src="~/js/DanhSachTuVan.js"></script>
+        <script src="~/js/DanhSachTuVan.js"></script>
 }

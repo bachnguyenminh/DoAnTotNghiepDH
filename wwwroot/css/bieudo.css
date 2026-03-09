@@ -1,0 +1,20 @@
+﻿.chart-container {
+    width: 90%;
+    margin: 20px auto;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.filter-bar {
+    margin-bottom: 20px;
+}
+
+.date-range-picker, select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin: 5px;
+}

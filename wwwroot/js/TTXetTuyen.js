@@ -1,4 +1,46 @@
 ﻿document.addEventListener("DOMContentLoaded", function () {
+    const khuVucSelect = document.getElementById("KhuVucUuTien");
+    const doiTuongSelect = document.getElementById("DoiTuongUuTien");
+    const diemKhuVucInput = document.getElementById("DiemKhuVucUuTien");
+    const diemDoiTuongInput = document.getElementById("DiemDoiTuongUuTien");
+
+    function tinhDiemKhuVuc(value) {
+        switch (value) {
+            case "KV1": return "0.75";
+            case "KV2": return "0.25";
+            case "KV3": return "0";
+            default: return "";
+        }
+    }
+
+    function tinhDiemDoiTuong(value) {
+        switch (value) {
+            case "01": return "2";
+            case "02": return "1.5";
+            case "03": return "1";
+            case "04": return "0.5";
+            case "05": return "0.5";
+            case "06": return "0.5";
+            case "07": return "0.5";
+            default: return "";
+        }
+    }
+
+    function capNhatDiemUuTien() {
+        if (khuVucSelect && diemKhuVucInput) {
+            diemKhuVucInput.value = tinhDiemKhuVuc(khuVucSelect.value);
+        }
+        if (doiTuongSelect && diemDoiTuongInput) {
+            diemDoiTuongInput.value = tinhDiemDoiTuong(doiTuongSelect.value);
+        }
+    }
+
+    if (khuVucSelect) khuVucSelect.addEventListener("change", capNhatDiemUuTien);
+    if (doiTuongSelect) doiTuongSelect.addEventListener("change", capNhatDiemUuTien);
+
+    // Gọi cập nhật khi load trang để điền sẵn nếu dữ liệu cũ
+    capNhatDiemUuTien();
+})
     // Select các phần tử liên quan đến chứng chỉ và đánh giá năng lực
     const ccSelect = document.getElementById("ChungChi");
     const dgSelect = document.getElementById("DanhGiaNangLuc");

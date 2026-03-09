@@ -1,0 +1,42 @@
+﻿.action-bar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.search-input {
+    padding: 6px 12px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-search {
+    margin-left: 10px;
+    padding: 6px 15px;
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-action {
+    margin-left: 10px;
+    padding: 6px 15px;
+}
+
+.bang-nganh-nghe-wrapper {
+    overflow-x: auto;
+}
+
+table th, table td {
+    vertical-align: middle !important;
+    font-size: 14px;
+}

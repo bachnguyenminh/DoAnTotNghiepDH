@@ -11,6 +11,8 @@ namespace WebTuyenSinh.Models
 
         public string? ToHopMon { get; set; }
 
-        public string? DiemDiemTrungTuyen { get; set; }
+        public string? DiemTrungTuyen { get; set; }
+
+        public string? ChiTieu { get; set; }
     }
 }

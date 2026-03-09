@@ -47,7 +47,7 @@ namespace WebTuyenSinh.Controllers
             var principal = new ClaimsPrincipal(identity);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
 
-            return RedirectToAction("Index", "AdminHome"); // Điều hướng sau đăng nhập
+            return RedirectToAction("BieuDo", "AdminHomeBieuDo"); // Điều hướng sau đăng nhập
         }
 
         public async Task<IActionResult> DangXuat()

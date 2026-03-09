@@ -17,7 +17,7 @@
             <ul class="navbar-nav menu-right">
                 <li class="nav-item">
                     <a class="nav-link text-dark"
-                       href="@(Context.Session.GetString("CCCD") == null ? Url.Action("Login", "Account") : Url.Action("Index", "Home"))">
+                       href="@(Context.Session.GetString("CCCD") == null ? Url.Action("ThongTinNguyenVong", "Account") : Url.Action("Index", "Home"))">
                         Trang chủ
                     </a>
                 </li>
@@ -29,6 +29,8 @@
                     </a>
                 </li>
 
+                <link rel="stylesheet" href="~/css/thongbao.css" />
+                <script src="~/js/thongbao.js"></script>
 
                 @if (string.IsNullOrEmpty(hoTen))
                 {
@@ -47,9 +49,9 @@
                             <li><a class="dropdown-item" asp-controller="Account" asp-action="ThongTinXetTuyen">Thông tin xét tuyển</a></li>
                             <li><a class="dropdown-item" asp-controller="Account" asp-action="DangKyNguyenVong">Thông tin Nguyện vọng</a></li>
                             <li><a class="dropdown-item" asp-controller="Account" asp-action="PhieuDangKy">Phiếu đăng kí</a></li>
-                            <li><a class="dropdown-item" asp-controller="Account" asp-action="PhieuDangKy">Lịch sử đăng nhập</a></li>
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="LichSuDangNhap">Lịch sử đăng nhập</a></li>
                             <li><a class="dropdown-item" asp-controller="Account" asp-action="Logout">Đăng xuất</a></li>
-                            <li><a class="dropdown-item" asp-controller="Account" asp-action="Logout">Xóa tài khoản</a></li>
+                            <li><a class="dropdown-item" asp-controller="Account" asp-action="XoaTaiKhoan">Xóa tài khoản</a></li>
                         </ul>
                     </li>
 

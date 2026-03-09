@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace WebTuyenSinh.Models;
 
@@ -17,4 +18,13 @@ public class ThongTinSinhVien
     public byte[]? AnhCaNhan { get; set; }
     public byte[]? AnhCCCDMatTruoc { get; set; }
     public byte[]? AnhCCCDMatSau { get; set; }
+    // ➡️ Các thuộc tính phụ để hiển thị ảnh trong View:
+    [NotMapped]
+    public string? AnhCaNhanBase64 { get; set; }
+
+    [NotMapped]
+    public string? AnhCCCDMatTruocBase64 { get; set; }
+
+    [NotMapped]
+    public string? AnhCCCDMatSauBase64 { get; set; }
 }

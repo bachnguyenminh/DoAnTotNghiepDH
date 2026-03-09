@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxLaGFpQmFvVGhvbmdUaW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/Account/LichSuDangNhap.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMaWNoU3VEYW5nTmhhcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -70,6 +74,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxUaG9uZ1RpblhldFR1eWVuLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/Account/XoaTaiKhoan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxYb2FUYWlLaG9hbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/AdminHomeBieuDo/BieuDo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ib21lQmlldURvXEJpZXVEby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/AdminHome/BieuDo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ib21lXEJpZXVEby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/AdminHome/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5Ib21lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -80,6 +96,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/Admin/DangNhap.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFuZ05oYXAuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/DanhSachSinhVien/DiemHB.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaFNhY2hTaW5oVmllblxEaWVtSEIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/DanhSachSinhVien/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaFNhY2hTaW5oVmllblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/DanhSachSinhVien/NguyenVong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaFNhY2hTaW5oVmllblxOZ3V5ZW5Wb25nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/DanhSachSinhVien/ThongTin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFuaFNhY2hTaW5oVmllblxUaG9uZ1Rpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/DanhSachTuVan/Index.cshtml]
@@ -104,6 +136,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/NganhNghe/DanhSachNganhNghe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmdhbmhOZ2hlXERhbmhTYWNoTmdhbmhOZ2hlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ADMIN/source/repos/WebTuyenSinh/Views/Shared/Error.cshtml]

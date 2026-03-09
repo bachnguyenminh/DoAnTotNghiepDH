@@ -21,7 +21,7 @@
 
         <!-- Trường học lớp 10 -->
         <fieldset class="border p-3 mb-4">
-            <legend class="w-auto px-2">Trường học lớp 10</legend>
+            <legend class="w-auto px-2">Trường học lớp 10 </legend>
             <div class="row">
                 <div class="col-md-4">
                     <label>Tỉnh/Thành</label>
@@ -68,18 +68,19 @@
 
         <!-- Ưu tiên -->
         <div class="row mb-3">
-            <div class="col-md-6">
+            <div class="col-md-4">
                 <label>Khu vực ưu tiên</label>
-                <select asp-for="KhuVucUuTien" class="form-select">
+                <select asp-for="KhuVucUuTien" class="form-select" id="KhuVucUuTien">
                     <option value="">-- Chọn khu vực --</option>
                     <option value="KV1">KV1</option>
                     <option value="KV2">KV2</option>
                     <option value="KV3">KV3</option>
                 </select>
             </div>
-            <div class="col-md-6">
+          
+            <div class="col-md-4">
                 <label>Đối tượng ưu tiên</label>
-                <select asp-for="DoiTuongUuTien" class="form-select">
+                <select asp-for="DoiTuongUuTien" class="form-select" id="DoiTuongUuTien">
                     <option value="">-- Chọn đối tượng --</option>
                     @for (int i = 0; i <= 7; i++)
                     {
@@ -87,6 +88,7 @@
                     }
                 </select>
             </div>
+            
         </div>
 
         <!-- Chứng chỉ -->

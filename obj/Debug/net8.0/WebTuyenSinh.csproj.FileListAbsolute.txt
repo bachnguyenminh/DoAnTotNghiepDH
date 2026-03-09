@@ -192,6 +192,12 @@ C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\PdfSharpCore.dll
 C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
 C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\SixLabors.Fonts.dll
 C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\de\PdfSharpCore.resources.dll
-C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
 C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\Twilio.dll
 C:\Users\ADMIN\source\repos\WebTuyenSinh\obj\Debug\net8.0\WebTuyenSinh.sourcelink.json
+C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\ClosedXML.dll
+C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\ClosedXML.Parser.dll
+C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\DocumentFormat.OpenXml.dll
+C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\DocumentFormat.OpenXml.Framework.dll
+C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\ExcelNumberFormat.dll
+C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\RBush.dll
+C:\Users\ADMIN\source\repos\WebTuyenSinh\bin\Debug\net8.0\System.IO.Packaging.dll

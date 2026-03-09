@@ -33,7 +33,9 @@ namespace WebTuyenSinh.ViewModels
 
         // Ưu tiên
         public string? KhuVucUuTien { get; set; }
+        public string? DiemKhuVucUuTien { get; set; }
         public string? DoiTuongUuTien { get; set; }
+        public string? DiemDoiTuongUuTien { get; set; }
 
         // Chứng chỉ
         public string? ChungChi { get; set; }
@@ -60,6 +62,8 @@ namespace WebTuyenSinh.ViewModels
         public string? TiengNhat { get; set; }
         public string? TiengHan { get; set; }
 
+        public string? DiemA00 { get; set; }
+        public string? DiemD01 { get; set; }
         // Dropdown hỗ trợ
         public List<string> DanhSachChungChi { get; set; } = new();
         public List<string> DanhSachDanhGiaNangLuc { get; set; } = new();
